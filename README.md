@@ -1,6 +1,6 @@
 **The Philippine Eagle Tribute Page**
 
-This project is made under the freeCodeCamp "Responsive Web Design" module and this is just purely HTML and CSS.
+This project is made under the freeCodeCamp "Responsive Web Design" module and this is just pure HTML and CSS.
 
 **These are the fulfilled requirements of this project:**
 
