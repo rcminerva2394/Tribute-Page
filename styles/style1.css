@@ -83,6 +83,8 @@
   padding: 1rem 1rem; 
   margin-top: clamp(-2.5rem, 30vw, -4rem);
   position: relative;
+  padding-left: clamp(1.5rem, 7vw, 3rem);
+  padding-right: clamp(1.5rem, 7vw, 3rem);
 
  }
  footer {
@@ -369,7 +371,7 @@ cite {
   }
 
   .fourth-container h4 {
-    font-size: clamp(5rem, 80vw, 6rem);
+    font-size: clamp(4rem, 80vw, 5rem);
     line-height: 3rem;
  
   }
@@ -385,7 +387,7 @@ cite {
     flex-flow: row;
     justify-content: space-between;
     position: relative;
-    padding-top: 2rem;
+    padding-top: 3rem;
    }
  
   .fifth-container {
