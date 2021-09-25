@@ -96,10 +96,14 @@
  }
 
 
+ /*By The Numbers*/
+
+
+
  /*IMAGES*/
  
  #image {
-  width: clamp(295px, 50vw, 80%);
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -313,10 +317,13 @@ cite {
   }
 
   .first-container img {
+    width: 70%;
     position: relative;
     z-index: 0;
-    margin-right: clamp(7rem, 10vw, 8rem) !important;
     margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .first-container p{
@@ -327,7 +334,7 @@ cite {
   }
 
   #img-caption {
-    width: clamp(30%, 7vw, 100%) ;
+    width: clamp(20%, 7vw, 100%) ;
   }
   
   
