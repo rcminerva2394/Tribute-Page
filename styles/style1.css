@@ -340,7 +340,6 @@ cite {
   
   .second-container {
     margin-top: clamp(-6.90rem, 50vw, -9rem);
-    font-size: 1.15rem;
     line-height: 2.30rem;
   }
   
@@ -352,12 +351,9 @@ cite {
 
   .third-container img {
     margin-left: clamp(-15rem, 50vw, -20rem);
-    width: clamp(750px, 70vw, 70%);
+    width:  clamp(750px, 70vw, 70%);
   }
   
-  .facts-content {
-    font-size: clamp(1.25rem, 20vw, 1.30rem);
-  }
 
   .third-container h2 {
     font-size: clamp(1.75rem, 80vw, 2rem);
@@ -367,18 +363,19 @@ cite {
     
   }
  
+   .fourth-container {
+    margin-top: clamp(-8rem, 100vw, -9.5rem);
+    padding-top: 2.5rem;
+  }
+  
   .fourth-container p {
-    font-size: clamp(1rem, 20vw, 1.25rem);
+    font-size: 1.15rem;
     line-height: 1.75rem;
     
   }
 
-  .fourth-container {
-    margin-top: clamp(-8rem, 100vw, -9.5rem);
-  }
-
   .fourth-container h4 {
-    font-size: clamp(4rem, 80vw, 5rem);
+    font-size: 4.5rem;
     line-height: 3rem;
  
   }
@@ -386,7 +383,7 @@ cite {
   .fourth-container h2 {
     padding-left: 10rem;
     padding-right: 6rem;
-    font-size: clamp(1.75rem, 80vw, 2rem);
+    font-size: 2rem;
    }
     
   .numbers {
