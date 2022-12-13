@@ -219,6 +219,16 @@ cite {
     text-decoration: underline;
 }
 
+.creator:link,
+.creator:visited {
+    text-decoration: none;
+    color: var(--dark-gold);
+}
+
+.creator:hover,
+.creator:active {
+    color: var(--white);
+}
 /* MEDIA QUERIES*/
 
 /* min of 496px */
