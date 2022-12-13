@@ -1,0 +1,370 @@
+:root {
+    --black: #000000;
+    --dark-gold: #7d5f38;
+    --lighter-gold: #b88746;
+    --white: #ffffff;
+    --dark-green: #4f6c54;
+    --light-grey: #e7e7e4;
+    --light-pink: #fef9f3;
+    --light-green: #819f87;
+    --darker-green: #1c2921;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    line-height: 1.4;
+}
+
+p {
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+/* REUSABLE CODE related to layout or styles */
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.heading {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+/*SECTIONS*/
+
+.hero-section {
+    background-color: #000000;
+    padding: 4rem 2rem 0 2rem;
+    flex-direction: column;
+}
+
+.second-container {
+    color: white;
+    background-color: var(--dark-green);
+    padding: 2rem;
+    line-height: 2;
+    margin-top: -2.5rem;
+    position: relative;
+    z-index: 0;
+}
+
+.third-container {
+    background-color: var(--light-grey);
+    position: relative;
+    padding: 3rem 2rem 2rem 2rem;
+    margin-bottom: -7rem;
+}
+
+.fourth-container {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--light-pink);
+    position: relative;
+}
+
+.fifth-container {
+    background-color: var(--light-green);
+    color: var(--darker-green);
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.sources {
+    background-color: var(--light-grey);
+    padding: 2rem;
+    position: relative;
+}
+
+footer {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--dark-gold);
+    text-align: center;
+    background-color: var(--black);
+    padding: 1rem 1rem;
+}
+
+/* BY THE NUMBERS*/
+
+/*IMAGES*/
+
+.hero-image {
+    max-width: 100%;
+    margin: 2rem auto;
+}
+
+.eagle-flying {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.fifth-container img {
+    width: 100%;
+    padding-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+/*TEXT STYLES*/
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: 1px;
+    color: var(--lighter-gold);
+}
+
+.img-caption {
+    color: var(--white);
+}
+
+.third-container h2 {
+    color: var(--dark-gold);
+    text-align: center;
+}
+
+.third-container h3 {
+    font-size: 1.75rem;
+}
+
+.facts-content {
+    line-height: 2;
+}
+
+.third-container h3 {
+    color: var(--dark-gold);
+}
+
+.fourth-container h2 {
+    color: var(--dark-green);
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.numbers-box {
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.number {
+    font-size: 7rem;
+    color: var(--dark-gold);
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1;
+}
+
+.numbers-box span {
+    font-size: 2.5rem;
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    color: var(--dark-gold);
+    margin-top: -1rem;
+}
+
+.numbers-text {
+    color: var(--dark-green);
+    width: 300px;
+}
+
+blockquote p,
+blockquote cite {
+    margin-left: 2rem;
+}
+blockquote::before {
+    content: '\201C';
+    font-size: 8rem;
+    line-height: 1rem;
+}
+blockquote p {
+    margin-top: -2rem;
+}
+
+cite {
+    font-size: 1.5rem;
+}
+
+.support {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    text-shadow: 0px 1px gray;
+    font-size: 1.75rem;
+    margin-top: 2rem;
+}
+
+.sources p {
+    font-family: 'Bebas Neue';
+    color: var(--dark-gold);
+}
+
+:is(.sources li) a {
+    color: var(--dark-green);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+:is(.support, .sources li) a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES*/
+
+/* min of 496px */
+@media (min-width: 31em) {
+    .hero-section {
+        padding: 6rem 3rem 0 3rem;
+    }
+
+    html {
+        font-size: 70%;
+    }
+}
+
+/* min of 656px */
+@media (min-width: 41em) {
+    .header {
+        justify-self: center;
+        text-align: center;
+    }
+    .hero-section {
+        padding: 5rem 5rem 0 5rem;
+    }
+
+    .hero-image {
+        width: 80%;
+    }
+}
+
+/* min of 850px */
+@media (min-width: 53em) {
+    .header {
+        width: 75%;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 70%;
+    }
+
+    .third-container {
+        margin-bottom: -8rem;
+    }
+
+    .fifth-container img {
+        width: 80%;
+    }
+}
+
+/* min of 1050px */
+@media (min-width: 66em) {
+    .hero-section {
+        position: relative;
+        height: 600px;
+        padding: 7rem;
+        margin: 0 auto;
+    }
+
+    .header {
+        width: 100%;
+        text-align: left;
+        z-index: 5;
+    }
+
+    .title {
+        font-size: 14rem;
+    }
+
+    .img-caption {
+        width: 40%;
+        font-size: 1.75rem;
+        line-height: 1.5;
+    }
+
+    .hero-image {
+        width: 700px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .second-container,
+    .third-container,
+    .fifth-container {
+        padding: 5rem;
+    }
+    .third-container {
+        margin-bottom: -11rem;
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .numbers-box {
+        margin-bottom: 1rem;
+    }
+
+    .fifth-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fifth-container img {
+        align-self: end;
+        width: 100%;
+        margin-bottom: -5rem;
+    }
+
+    .sources {
+        padding: 2rem 5rem;
+    }
+}
+
+/*min of 1150px*/
+@media (min-width: 72em) {
+    .third-container {
+        grid-template-columns: 1fr 1.25fr;
+        margin-bottom: 0;
+        padding-bottom: 10rem;
+    }
+
+    .third-container h2 {
+        grid-column: 1 / -1;
+    }
+
+    .third-container img {
+        grid-column: 1;
+        grid-row: 2 / 3;
+        align-self: end;
+        margin-bottom: -15rem;
+    }
+
+    .facts-content {
+        grid-column: 2 / 3;
+        align-self: start;
+    }
+}
+
+/* min of 1300px */
+@media (min-width: 81em) {
+    .hero-section {
+        padding: 8rem 8rem 0 8rem;
+    }
+    .hero-image {
+        right: 10rem;
+    }
+}
