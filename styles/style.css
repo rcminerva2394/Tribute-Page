@@ -110,10 +110,10 @@ footer {
     margin-top: 2.5rem;
 }
 
-.fifth-container img {
+.fifth-container picture img {
     width: 100%;
     padding-top: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: -3rem;
 }
 
 /*TEXT STYLES*/
@@ -273,7 +273,7 @@ cite {
         margin-bottom: -8rem;
     }
 
-    .fifth-container img {
+    .fifth-container picture img {
         width: 80%;
     }
 }
@@ -332,11 +332,14 @@ cite {
     .fifth-container {
         grid-template-columns: 1fr 1fr;
     }
+    .fifth-container picture {
+        position: relative;
+    }
 
-    .fifth-container img {
-        align-self: end;
+    .fifth-container picture img {
         width: 100%;
-        margin-bottom: -5rem;
+        position: absolute;
+        transform: translate(0, 15rem);
     }
 
     .sources {
@@ -363,6 +366,18 @@ cite {
         margin-bottom: -15rem;
     }
 
+    .fifth-container {
+        height: 40rem;
+    }
+
+    .fifth-container picture img {
+        transform: translate(0, 40%);
+    }
+
+    blockquote p {
+        font-size: 1.5rem;
+    }
+
     .facts-content {
         grid-column: 2 / 3;
         align-self: start;
@@ -373,8 +388,20 @@ cite {
 @media (min-width: 81em) {
     .hero-section {
         padding: 8rem 8rem 0 8rem;
+        justify-content: center;
     }
+
     .hero-image {
-        right: 10rem;
+        right: 20rem;
+    }
+
+    .second-container,
+    .fifth-container {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .fifth-container picture img {
+        transform: translate(0, 10rem);
     }
 }
